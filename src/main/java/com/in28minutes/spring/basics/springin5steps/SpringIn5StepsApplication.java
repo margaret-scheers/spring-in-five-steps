@@ -10,8 +10,10 @@ public class SpringIn5StepsApplication {
     public static void main(String[] args) {
 
         ApplicationContext applicationContext = SpringApplication.run(SpringIn5StepsApplication.class, args);
-        BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
-        int result = binarySearch.binarySearch(new int[] {1,5,3} , 3);
+        BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
+        BinarySearchImpl binarySearch2 = applicationContext.getBean(BinarySearchImpl.class);
+        System.out.println(binarySearch1 + " " + binarySearch2);
+        int result = binarySearch1.binarySearch(new int[] {1,5,3} , 3);
         System.out.println("result= " + result);
     }
 
