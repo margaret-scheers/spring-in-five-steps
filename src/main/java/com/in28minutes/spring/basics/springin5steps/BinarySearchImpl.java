@@ -10,7 +10,7 @@ public class BinarySearchImpl {
 
     public int binarySearch(int[] numbers, int numberToSearchFor) {
 
-        // sorting logic
+        // sorting logic test change
         BubbleSortAlgorithm bubbleSortAlgorithm = new BubbleSortAlgorithm();
         int[] sortedNumbers = bubbleSortAlgorithm.sort(numbers);
         System.out.println(sortAlgorithm);
