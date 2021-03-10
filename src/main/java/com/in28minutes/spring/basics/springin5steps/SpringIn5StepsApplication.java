@@ -8,8 +8,6 @@ import org.springframework.context.ApplicationContext;
 public class SpringIn5StepsApplication {
 
     public static void main(String[] args) {
-        //BinarySearchImpl binarySearch = new BinarySearchImpl(new BubbleSortAlgorithm());
-
 
         ApplicationContext applicationContext = SpringApplication.run(SpringIn5StepsApplication.class, args);
         BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
