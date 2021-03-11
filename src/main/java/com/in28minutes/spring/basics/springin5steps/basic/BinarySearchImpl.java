@@ -6,6 +6,9 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
 @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class BinarySearchImpl {
@@ -21,4 +24,15 @@ public class BinarySearchImpl {
         // search
         return 3;
     }
+
+    @PostConstruct
+    public void postConstruct() {
+        System.out.println("postConstruct");
+    }
+
+    @PreDestroy
+    public void preDestroy() {
+        System.out.println("PreDestroy");
+    }
+
 }
